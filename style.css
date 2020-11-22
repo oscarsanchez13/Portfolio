@@ -1,0 +1,137 @@
+/* Layout for everything else */
+*{margin:0}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2D3142;
+  background-color: #FFFFFF;
+}
+
+/* Layout for header */
+header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  background-color: #2D3142;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 450;
+  font-size: 1.5rem;
+  line-height: .75;
+  color: #F3E9DC;
+}
+
+/* Layout of footer */
+footer {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  background-color: #2D3142;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 450;
+  font-size: .9rem;
+  line-height: .75;
+  color: #FFFFFF
+}
+
+/* Classes */
+.wrapper {
+  margin: auto;
+  width: 75%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+/* .img-profile {
+  max-width: 60rem;
+  max-height: 60rem;  
+  } */
+
+.rounded-circle {
+  border-radius: 5% !important;
+}
+
+/* Specific text layout */
+h1 {
+  color: #FFFFFF;
+}
+
+h2 {
+  color: #5E3023;
+  text-align: center; 
+}
+
+#projects h3 {
+  color: #5E3023;
+  text-align: center; 
+}
+
+img {
+  width: 100%;  
+}
+
+.boarder {
+  border: 0.2rem solid #EF8354;
+}
+
+a {
+  color: #EF8354;
+}
+
+a:hover {
+  color: #4F5D75;
+}
+
+/* Groups & Items  (Mobile First) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+* SECTIONS */
+
+#intro, #projects, #contact {
+  margin-bottom: 100px;
+}
+
+footer, #contact {
+  margin-top: 100px
+}
+
+#intro {
+  margin-top: 60px
+}
+
+#about {
+  background-color: #D6D7D7;
+  padding: 20px 0 30px 0;
+  margin: 100px 0;
+}
