@@ -10,14 +10,53 @@ body {
 /* Layout for header */
 header {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   text-align: center;
   background-color: #2D3142;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 450;
+  font-weight: 400;
   font-size: 1.5rem;
   line-height: .75;
   color: #FFFFFF;
+}
+
+/* ---  Navigation --- */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;  
+}
+
+header nav ul li a:hover {
+  color: #EF8354;
+}
+
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+   
+  header nav {
+    margin-top: 14px;
+  }
 }
 
 /* Layout of footer */
@@ -64,6 +103,14 @@ h2, h3 {
   text-align: center; 
 }
 
+.no-dot {
+  list-style: none;
+}
+
+.under {
+  text-decoration: underline;
+}
+
 img {
   width: 100%;  
 }
@@ -74,6 +121,7 @@ img {
 
 a {
   color: #EF8354;
+  text-decoration: none;
 }
 
 a:hover {
@@ -113,19 +161,49 @@ a:hover {
 * SECTIONS */
 
 #intro, #projects, #contact {
-  margin-bottom: 100px;
+  margin: 100px;
 }
 
 footer, #contact {
-  margin-top: 100px
+  margin-top: 100px;
 }
 
 #intro {
-  margin-top: 60px
+  margin-top: 60px;
 }
 
 #about {
   background-color: #D6D7D7;
   padding: 20px 0 30px 0;
-  margin: 100px 0;
+  margin: 80px 0;
+}
+
+/* ---  Contact Form Design --- */
+
+form {
+  padding-right: 6px;
+  /* Fixed small sizing issue on the right */
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+/* Fieldset & Legend */
+
+fieldset {
+  padding: 10px 12px;  
+  margin: 10px 20px;
+  border-radius: 6px;
+}
+
+legend {
+  padding: 3px 6px;
+  border-right: 6px;
 }
