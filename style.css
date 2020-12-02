@@ -63,6 +63,19 @@ header nav ul li a:hover {
   }
 }
 
+header nav div {display: none}
+@media all and (max-width: 400px){
+  header nav ul {
+    display: none
+  }
+  header nav {
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+  header nav div {display: flex;
+  }
+}
+
 /* Layout of footer */
 footer {
   padding-top: 1.5rem;
