@@ -66,10 +66,10 @@ header nav ul li a:hover {
 header nav div {display: none}
 @media all and (max-width: 400px){
   header nav ul {
-    display: none
+    display: table-column
   }
   header nav {
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: 15px;
   }
   header nav div {display: flex;
