@@ -7,7 +7,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #2D3142;
-  background-color: #FFFFFF;  
+  background-color: #FFFFFF; 
+  background-size: cover; 
 }
 
 /* Layout for header */
@@ -17,6 +18,7 @@ header {
   padding-bottom: 1.5rem;
   text-align: center;
   background-color: #2D3142;
+  background-size: cover;  
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -52,21 +54,37 @@ header nav ul li a:hover {
   color: #EF8354;
 }
 
+/* Logo moves to left of screen */
+
 @media all and (min-width: 700px) {
   header {
     display: flex;
     justify-content: space-between;
+    background-color: #2D3142;
+    background-size: cover;
+  }
+
+  .logo {
+    padding-left: 20px;
   }
    
   header nav {
     margin-top: 14px;
+    padding-right: 20px;    
   }
 }
 
-header nav div {display: none}
+header nav div {
+  display: none
+}
+
+/* Nav Changes to vertical layout */
+
 @media all and (max-width: 400px){
   header nav ul {
-    display: table-column
+    display: table-column;
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
   }
   header nav {
     justify-content: center;
@@ -75,6 +93,7 @@ header nav div {display: none}
   header nav div {display: flex;
   }
 }
+
 
 /* Layout of footer */
 footer {
@@ -131,9 +150,18 @@ img {
   width: 100%;  
 }
 
+#projects img {  
+  width: fit-content;
+  height: 300px; 
+}
+
 a {
   color: #EF8354;
   text-decoration: none;
+}
+
+span {
+  color: gray
 }
 
 a:hover {
@@ -143,6 +171,15 @@ a:hover {
  ul li {
   list-style-position: inside !important;  
   /* padding-left: 20px; */
+}
+
+.logo, nav {
+  padding-left: 20px
+}
+
+.icons {
+  padding-top: 15px;
+  width: 50%;
 }
 
 /* Groups & Items  (Mobile First) */
@@ -173,6 +210,13 @@ a:hover {
   .group {
     flex-direction: row;
   }
+  
+   header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2D3142;
+    background-size: cover;
+  }  
 }
 
 * SECTIONS */
