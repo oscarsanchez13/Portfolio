@@ -105,7 +105,11 @@ footer {
   font-weight: 450;
   font-size: .9rem;
   line-height: .75;
-  color: #FFFFFF
+  color: #FFFFFF;
+}
+
+footer a {
+  width: 100px;  
 }
 
 /* Classes */
