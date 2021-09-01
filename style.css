@@ -107,10 +107,15 @@ footer {
   font-size: .9rem;
   line-height: .75;
   color: #FFFFFF;
+  flex-direction: row;
 }
 
 footer a {
   width: 100px;  
+}
+
+.icon {
+  max-width: 80px;
 }
 
 /* Classes */
@@ -178,13 +183,12 @@ a:hover {
   /* padding-left: 20px; */
 }
 
-.logo, nav {
+.ul-left {
   padding-left: 20px
 }
 
-.icons {
-  padding-top: 15px;
-  width: 50%;
+.logo, nav {
+  padding-left: 20px
 }
 
 /* Groups & Items  (Mobile First) */
@@ -261,6 +265,15 @@ form textarea {
   height: 160px;
 }
 
+form button {
+  max-width: 100px;
+  background: #EF8354;
+  color: white;
+  border-radius: 30px;
+  margin-top: 0;
+  margin-bottom: 10px
+}
+
 /* Fieldset & Legend */
 
 fieldset {
@@ -278,3 +291,4 @@ legend {
   max-width: 100%;
   width: 500px; 
 }
+

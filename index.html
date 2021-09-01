@@ -90,21 +90,21 @@
               <h3>Interest</h3>
               <ul>
                 <li>Outdoors
-                  <ul>              
+                  <ul class="ul-left">              
                     <li>Soccer</li>
                     <li>Camping</li>
                     <li>Billiard</li>
                   </ul>
                 </li>
                 <li>Indoors
-                  <ul>
+                  <ul class="ul-left">
                     <li>Watching Food Shows</li>
                     <li>Video Games</li>
                     <li>Anime</li>
                   </ul>
                 </li>
                 <li>Self-improvement
-                  <ul>
+                  <ul class="ul-left">
                     <li>Geography</li>
                     <li>Business Finance</li>
                     <li>Architecture</li>
@@ -179,43 +179,36 @@
     <div class="wrapper">
 		  <section id="contact">
           <h2 class="under">Contact</h2>
-          <br>
-        <div class="group">
-          <div class="item">
-            <p>Email:</p>
-            <ul class="no-dot">
-              <li><a href="mailto:ArchitectSanchez13@gmail.com">ArchitectSanchez13@gmail.com</a></li>                        
-            </ul>
-
-            <p>Connect:</p>
-            <ul class="no-dot">
-              <li><a href="https://www.linkedin.com/in/oscarsanchez13/" target="_blank"> LinkedIn</a></li>
-              <li><a href="https://github.com/oscarsanchez13" target="_blank">GitHub</a></li>
-            </ul>
-
-            <br>
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419746.0720892351!2d-92.61811513069034!3d34.72368415773249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d2a134a11f569b%3A0x3405f5100df35b17!2sLittle%20Rock%2C%20AR!5e0!3m2!1sen!2sus!4v1606012012924!5m2!1sen!2sus" width="450" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="center rounded-circle boarder"></iframe>            
-          </div>
-          <div class="item-double">            
-            <fieldset>
-              <legend><h2>Say Hi!</h2></legend>
-                <form action="https://formspree.io/f/mvovbong"
- method="post">
+          <br>         
+        <fieldset>
+          <legend><h2>Say Hi!</h2></legend>
+            <form action="https://formspree.io/f/mvovbong" method="post">
+              <div class="group">
+                <div class="item">
                   <label for="name">Name:</label>
                   <input id="name" name="name" type="text" required>
-                  <br>
+                </div>
+                <div class="item">
+                  <label for="company">Company:</label>
+                  <input id="company" name="company" type="text">
+                </div>
+              </div>
+              <div class="group">
+                <div class="item">
                   <label for="email">Email:</label>
                   <input id="email" name="email" type="email" required>
-                  <br>
+                </div>
+                <br>
+              </div>
+              <div class="group">
+                <div class="item">
                   <label for="comment">Message:</label>
-                  <textarea id="comment" name="comment" required></textarea>      
-                  <br>     
-                  <button type="submit">Submit</button>
-                </form>
-            </fieldset>
-          </div>
-        </div>	
+                <textarea id="comment" name="comment" required></textarea>
+                </div>
+              </div>
+              <button class="center" type="submit">Submit</button>
+            </form>
+        </fieldset>          	
       </section>
     </div>
 	</main>
@@ -223,7 +216,12 @@
 <!-- FOOTER -->
 
 	<footer>
-    <h3>© Oscar Sanchez</h3>
+    <div class="item">
+      <a href="https://github.com/oscarsanchez13" target="_blank"><img src="icons/github-icon.png" alt="github icon" class="icon"></a>&nbsp;
+      <a href="https://www.linkedin.com/in/oscarsanchez13/" target="_blank"><img src="icons/linkedin-icon.png" alt="linkedin icon" class="icon"></a>&nbsp;
+      <a href="mailto:architectsanchez13@gmail.com"><img src="icons/mail-icon.png" alt="email icon" class="icon"></a>
+    </div>    
+    <h3>Created by Oscar Sanchez ©</h3>
 	</footer>
 
 	<script src="script.js">
